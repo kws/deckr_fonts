@@ -122,7 +122,7 @@ poetry build
 ## Requirements
 
 - Python >= 3.10
-- justmytype >= 0.1.0
+- justmytype >= 0.3.0
 
 ## Related Projects
 
