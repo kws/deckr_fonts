@@ -15,9 +15,9 @@ class DeckrFontPack:
             List of Path objects pointing to the fonts directory.
         """
         # Resolve fonts directory relative to this package
-        # Structure: src/deckr_fonts/pack.py -> fonts/
-        package_dir = Path(__file__).parent.parent.parent
-        fonts_dir = package_dir / "fonts"
+        # Structure: deckr_fonts/pack.py -> deckr_fonts/fonts/
+        # Fonts are now in the same package directory, making path resolution simpler
+        fonts_dir = Path(__file__).parent / "fonts"
         return [fonts_dir]
 
     def get_priority(self) -> int:

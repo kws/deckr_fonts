@@ -70,7 +70,7 @@ This package itself is licensed under the MIT License. See [LICENSE](LICENSE) fo
 
 ### Font Licenses
 
-All fonts included in this package are licensed under the **SIL Open Font License (OFL) Version 1.1**. Each font family has its own license file in the `licenses/` directory.
+All fonts included in this package are licensed under the **SIL Open Font License (OFL) Version 1.1**. Each font family has its own license file in the package's `licenses/` directory.
 
 #### Font Attribution
 
@@ -93,7 +93,7 @@ The SIL Open Font License (OFL) allows the fonts to be:
 
 The fonts cannot be sold by themselves, and derivative works must also be released under the OFL.
 
-Full license text is available in each font's `licenses/{fontname}/OFL.txt` file, and online at https://openfontlicense.org
+Full license text is available in each font's `deckr_fonts/licenses/{fontname}/OFL.txt` file (when the package is installed), and online at https://openfontlicense.org
 
 ## Development
 
@@ -104,9 +104,9 @@ deckr_fonts/
 ├── src/
 │   └── deckr_fonts/
 │       ├── __init__.py      # Entry point factory
-│       └── pack.py          # FontPack implementation
-├── fonts/                   # Font files
-├── licenses/                # Individual font license files
+│       ├── pack.py          # FontPack implementation
+│       ├── fonts/           # Font files
+│       └── licenses/        # Individual font license files
 ├── pyproject.toml          # PEP 621 project configuration
 └── README.md                # This file
 ```
