@@ -10,6 +10,11 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = ["justmytype (>=0.3.0,<0.4.0)"]
 
+[project.urls]
+Homepage = "https://github.com/kws/deckr_fonts"
+Repository = "https://github.com/kws/deckr_fonts"
+Issues = "https://github.com/kws/deckr_fonts/issues"
+
 [project.optional-dependencies]
 dev = ["pytest>=7.0.0"]
 
