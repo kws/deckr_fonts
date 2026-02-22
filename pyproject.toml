@@ -1,6 +1,6 @@
 [project]
 name = "deckr-fonts"
-version = "0.2.0"
+version = "0.2.0rc1"
 description = "Font pack for Deckr project - Google Fonts bundle for JustMyType"
 authors = [
     {name = "Kaj Siebert", email = "kaj@k-si.com"}
@@ -8,32 +8,29 @@ authors = [
 license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["justmytype (>=0.3.0,<0.4.0)"]
+dependencies = ["justmytype>=0.3.0"]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0", 
+    "justmytype-pack-tools>=0.2.0rc2"
+]
 
 [project.urls]
 Homepage = "https://github.com/kws/deckr_fonts"
 Repository = "https://github.com/kws/deckr_fonts"
 Issues = "https://github.com/kws/deckr_fonts/issues"
 
-[project.optional-dependencies]
-dev = ["pytest>=7.0.0"]
 
 [project.entry-points."justmytype.packs"]
 "deckr-fonts" = "deckr_fonts:get_font_pack"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.poetry]
-# Poetry configuration for PEP 621 compatibility
-# All project metadata is defined in [project] above
-
-[tool.poetry.dependencies]
-python = ">=3.10"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^9.0.2"
+[tool.hatch.build.targets.wheel]
+packages = ["src/deckr_fonts"]
 
 [tool.ruff]
 line-length = 88
