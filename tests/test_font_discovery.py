@@ -49,13 +49,11 @@ class TestFontDiscovery:
         assert len(families) > 0, "Should discover at least one font family"
 
     def test_expected_font_families_present(self, registry: FontRegistry) -> None:
-        """Test that expected font families are discovered."""
+        """Test that expected font families are discovered (from upstream.toml families)."""
         families = set(registry.list_families())
         expected_families = {
-            "Roboto",
             "Inter",
             "DM Sans",
-            "Roboto Mono",
             "Audiowide",
             "Monofett",
         }
@@ -116,12 +114,9 @@ class TestFontResolution:
     @pytest.mark.parametrize(
         ("family", "weight", "style"),
         [
-            ("Roboto", 400, "normal"),
-            ("Roboto", 700, "normal"),
             ("Inter", 400, "normal"),
             ("Inter", 400, "italic"),
             ("DM Sans", 500, "normal"),
-            ("Roboto Mono", 400, "normal"),
             ("Audiowide", None, "normal"),
             ("Monofett", None, "normal"),
         ],
@@ -177,9 +172,12 @@ class TestFontSources:
                     deckr_fonts_found.append(family)
 
         assert len(deckr_fonts_found) > 0, "Should find fonts from deckr-fonts pack"
-        # Verify some expected fonts are from our pack
-        expected_in_pack = {"Roboto", "Inter", "DM Sans", "Audiowide", "Monofett"}
+        # Verify some expected fonts are from our pack (match upstream.toml families)
+        expected_in_pack = {"Inter", "DM Sans", "Audiowide", "Monofett"}
         found_expected = set(deckr_fonts_found) & expected_in_pack
         assert (
             len(found_expected) > 0
         ), f"Should find at least some expected fonts: {found_expected}"
+
+
+

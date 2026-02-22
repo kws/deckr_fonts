@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from importlib.resources import files
 from pathlib import Path
 
 
@@ -14,10 +15,7 @@ class DeckrFontPack:
         Returns:
             List of Path objects pointing to the fonts directory.
         """
-        # Resolve fonts directory relative to this package
-        # Structure: deckr_fonts/pack.py -> deckr_fonts/fonts/
-        # Fonts are now in the same package directory, making path resolution simpler
-        fonts_dir = Path(__file__).parent / "fonts"
+        fonts_dir = Path(str(files("deckr_fonts") / "fonts"))
         return [fonts_dir]
 
     def get_priority(self) -> int:

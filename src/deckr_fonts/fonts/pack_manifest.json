@@ -1,0 +1,201 @@
+{
+  "manifest_version": "1.0",
+  "pack": {
+    "name": "deckr-fonts",
+    "version": "0.2.0",
+    "entry_point": "deckr-fonts",
+    "priority": 100,
+    "description": "Font pack for Deckr project - Google Fonts bundle for JustMyType",
+    "source_url": "https://github.com/google/fonts"
+  },
+  "source": {
+    "repo": "https://github.com/google/fonts",
+    "ref": "388e257"
+  },
+  "build": {
+    "tool_version": "0.1.0"
+  },
+  "families": [
+    "ofl/audiowide",
+    "ofl/dmsans",
+    "ofl/inter",
+    "ofl/monofett",
+    "ofl/notocoloremoji",
+    "ofl/notoemoji",
+    "ofl/roboto",
+    "ofl/robotomono",
+    "ofl/sixtyfourconvergence"
+  ],
+  "fonts": [
+    {
+      "path": "ofl/audiowide/Audiowide-Regular.ttf",
+      "sha256": "c7c0f2b0f6fad8c623e31772ce79f94a4edb9321ffce9fce978ea892d20ae730",
+      "family": "Audiowide",
+      "style": "normal",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "Audiowide-Regular",
+      "variant": "Regular"
+    },
+    {
+      "path": "ofl/dmsans/DMSans-Italic[opsz,wght].ttf",
+      "sha256": "22259c0cc8237221b80f44c76ba8d36e6bce3cda72779f5b2773643d499720ae",
+      "family": "DM Sans",
+      "style": "italic",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "DMSans-9ptItalic",
+      "variant": "Italic"
+    },
+    {
+      "path": "ofl/dmsans/DMSans[opsz,wght].ttf",
+      "sha256": "8cd08d97e89c24d0aa92edd2f0f4c8ee6195eee9b7c9f154865a58b02f0c1c0d",
+      "family": "DM Sans",
+      "style": "normal",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "DMSans-9ptRegular",
+      "variant": "Regular"
+    },
+    {
+      "path": "ofl/inter/Inter-Italic[opsz,wght].ttf",
+      "sha256": "acd98e64795781b2058f07b18475e0ecee2a0fe2b42a49e2f9e37d0d6bf66ce6",
+      "family": "Inter",
+      "style": "italic",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "Inter-Italic",
+      "variant": "Italic"
+    },
+    {
+      "path": "ofl/inter/Inter[opsz,wght].ttf",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "family": "Inter",
+      "style": "normal",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "Inter-Regular",
+      "variant": "Regular"
+    },
+    {
+      "path": "ofl/monofett/Monofett-Regular.ttf",
+      "sha256": "1483f18841a24238172d6f3462a3ea790b7a3e6ca8bb55d404dede93669238d5",
+      "family": "Monofett",
+      "style": "normal",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "Monofett-Regular",
+      "variant": "Regular"
+    },
+    {
+      "path": "ofl/notocoloremoji/NotoColorEmoji-Regular.ttf",
+      "sha256": "be73479ba4fa277c89b85cd6c71717df30d9d0eff6da8c1e1a201e5b95459299",
+      "family": "Noto Color Emoji",
+      "style": "normal",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "NotoColorEmoji",
+      "variant": "Regular"
+    },
+    {
+      "path": "ofl/notoemoji/NotoEmoji[wght].ttf",
+      "sha256": "de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551",
+      "family": "Noto Emoji",
+      "style": "normal",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "NotoEmoji-Regular",
+      "variant": "Regular"
+    },
+    {
+      "path": "ofl/roboto/Roboto-Italic[wdth,wght].ttf",
+      "sha256": "9725a847af6b460ffca162ae66d20dad48b01876137947180b42d7dcd7887182",
+      "family": "Roboto",
+      "style": "italic",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "Roboto-Italic",
+      "variant": "Italic"
+    },
+    {
+      "path": "ofl/roboto/Roboto[wdth,wght].ttf",
+      "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+      "family": "Roboto",
+      "style": "normal",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "Roboto-Regular",
+      "variant": "Regular"
+    },
+    {
+      "path": "ofl/robotomono/RobotoMono-Italic[wght].ttf",
+      "sha256": "49ac343bb7b070071e53f0a8a501d68d140ed98ebd0a43b6b8fb96cf22f09ff7",
+      "family": "Roboto Mono",
+      "style": "italic",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "RobotoMono-Italic",
+      "variant": "Italic"
+    },
+    {
+      "path": "ofl/robotomono/RobotoMono[wght].ttf",
+      "sha256": "66a80e79d17e4c7cabd162e2916578a4cc08fd19eef6e2a643305eae9c567b2b",
+      "family": "Roboto Mono",
+      "style": "normal",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "RobotoMono-Regular",
+      "variant": "Regular"
+    },
+    {
+      "path": "ofl/sixtyfourconvergence/SixtyfourConvergence[BLED,SCAN,XELA,YELA].ttf",
+      "sha256": "aa8c653e04d6211debe5f5d1b7e851a64345a61b2a3c0a5a295cddb0f1e71688",
+      "family": "Sixtyfour Convergence",
+      "style": "normal",
+      "weight": 400,
+      "width": "normal",
+      "postscript_name": "SixtyfourConvergence-Regular",
+      "variant": "Regular"
+    }
+  ],
+  "licenses": [
+    {
+      "spdx": "OFL-1.1",
+      "path": "ofl/audiowide/OFL.txt"
+    },
+    {
+      "spdx": "OFL-1.1",
+      "path": "ofl/dmsans/OFL.txt"
+    },
+    {
+      "spdx": "OFL-1.1",
+      "path": "ofl/inter/OFL.txt"
+    },
+    {
+      "spdx": "OFL-1.1",
+      "path": "ofl/monofett/OFL.txt"
+    },
+    {
+      "spdx": "OFL-1.1",
+      "path": "ofl/notocoloremoji/OFL.txt"
+    },
+    {
+      "spdx": "OFL-1.1",
+      "path": "ofl/notoemoji/OFL.txt"
+    },
+    {
+      "spdx": "OFL-1.1",
+      "path": "ofl/roboto/OFL.txt"
+    },
+    {
+      "spdx": "OFL-1.1",
+      "path": "ofl/robotomono/OFL.txt"
+    },
+    {
+      "spdx": "OFL-1.1",
+      "path": "ofl/sixtyfourconvergence/OFL.txt"
+    }
+  ],
+  "family_count": 9,
+  "font_file_count": 13
+}
