@@ -8,12 +8,12 @@ authors = [
 license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["justmytype>=0.3.0"]
+dependencies = ["justmytype>=0.4.0"]
 
 [dependency-groups]
 dev = [
     "pytest>=7.0.0", 
-    "justmytype-pack-tools>=0.2.0rc2"
+    "justmytype-pack-tools>=0.2.0"
 ]
 
 [project.urls]
