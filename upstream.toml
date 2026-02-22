@@ -1,0 +1,41 @@
+# Font pack upstream config (google/fonts). Ref and archive_sha256 set at fetch time.
+# Top-level families (must appear before [pack] / [source] in TOML)
+# Add more families when paths are verified in github.com/google/fonts (e.g. Roboto, Noto emoji, sixtyfourconvergence).
+families = [
+  "ofl/audiowide",
+  "ofl/dmsans",
+  "ofl/inter",
+  "ofl/monofett",
+  "ofl/notocoloremoji",
+  "ofl/notoemoji",
+  "ofl/roboto",
+  "ofl/robotomono",
+  "ofl/sixtyfourconvergence",
+]
+
+[pack]
+name = "deckr-fonts"
+version = "0.2.0"
+entry_point = "deckr-fonts"
+priority = 100
+package_dir = "deckr_fonts"
+description = "Font pack for Deckr project - Google Fonts bundle for JustMyType"
+source_url = "https://github.com/google/fonts"
+
+[source]
+repo = "https://github.com/google/fonts"
+ref = "388e257" # Google Fonts as of 21 Feb 2026
+archive_sha256 = ""
+
+[[licenses]]
+spdx = "OFL-1.1"
+path = "LICENSES/OFL-1.1.txt"
+
+[[licenses]]
+spdx = "Apache-2.0"
+path = "LICENSES/Apache-2.0.txt"
+
+# Optional: override auto-detected license per family (strict + allowlist)
+# [[license_overrides]]
+# family = "ofl/..."
+# spdx = "OFL-1.1"
